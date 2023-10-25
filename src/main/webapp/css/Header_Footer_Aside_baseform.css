@@ -1,0 +1,343 @@
+ * {
+ 	margin:0;
+ 	padding:0;
+ 	box-sizing: border-box;
+ }
+ @font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ 
+ .clear {
+	position:absolute;
+	left:-9999px;
+	overflow:hidden;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+ul {
+    list-style: none;
+}
+
+body {
+    position:relative;
+}
+header {
+	position:relative;
+    z-index: 50;
+    top:0;
+    left:0;
+	width:100%;
+	height:120px;
+	border-bottom:2px solid #ddd;
+}
+.header_inner {
+    position: relative;
+    width:1280px;
+    margin:0 auto;
+    padding-top:70px;
+}
+header h1 {
+	position:absolute;
+	top:40px;
+	left:0;
+    height:75px;
+}
+
+header h1 a img {
+    width:250px;
+    height:75px;
+}
+
+header .top_nav {
+    width:100%;
+    height:50px;
+    margin:0 auto;
+}
+header .top_nav > ul {
+    float:right;
+    width:600px;
+    height:100%;
+
+}
+header .top_nav > ul > li {
+    text-align:center;
+    float:left;
+    display:block;
+    width:150px;
+    height:100%;
+}
+header .top_nav > ul > li > a{
+    display: block;
+    height:100%;
+    line-height:2.5;
+    color:#000;
+    font-size: 20px;
+    font-family: 'TheJamsil5Bold';
+}
+
+
+header .nav_back {
+	position:absolute;
+	top:120px;
+	left:0;
+    width:100%;
+    height:100px;
+    z-index:-1;
+    background-color:#fff;
+	/*border-bottom:2px solid #ddd;*/
+}
+
+.top_nav > ul > li .sub {
+    float:left;
+    width:100%;
+    height:100px;
+    padding-top:3px;
+}
+.top_nav > ul > li:hover .sub {
+    padding-top: 5px;
+}
+.top_nav > ul > li .sub li {
+    text-align:center;
+}
+.top_nav > ul > li .sub li a {
+    color:#000;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: 'TheJamsil5Bold';
+}
+.cate_login{
+    position:absolute;
+    top:15px;
+    right:0;
+    height:50px;
+}
+
+.cate_login li{
+    display: inline;
+    float: left;
+    margin-left:15px;
+    text-align: center;
+}
+.cate_login li.alarm {
+	position:relative;
+}
+.cate_login li:first-child{
+    margin-left: 0;
+}
+.cate_login li a:before {
+    content:"";
+    display:block;
+    width:36px;
+    height:36px;
+    margin:0 auto;
+    background:url(../image/login_icon.png) no-repeat center;
+    background-size: 36px;
+
+}
+.cate_login li.join a:before {
+    background-image:url(../image/join_icon.png);
+}
+.cate_login li.logout a:before {
+    background-image:url(../image/logout_icon.png);
+}
+.cate_login li.mypage a:before {
+    background-image:url(../image/mypage_icon.png);
+}
+.cate_login li.alarm.newalarm a:after {
+    content:"N";
+    width:16px;
+    height:16px;
+    line-height:16px;
+    background-color:#e61a1a;
+    border-radius:50%;
+    font-size:10px;
+    color:#fff;
+    position:absolute;
+    top:20px;
+    right:2px;
+}
+.cate_login li.alarm a:before {
+    background-image:url(../image/alarm_icon.png);
+}
+
+.cate_login li a {
+    color: #000;
+    font-size: 12px;
+    font-family: 'TheJamsil5Bold';
+}
+
+.alarm_wrap {
+	position:absolute;
+	top:80px;
+	right:145px;
+	width:350px;
+	height:250px;
+	background-color:#fff;
+	border: 1px solid #333;
+	border-radius:10px 0 10px 10px;
+}
+.alarm_wrap.hide {
+	display:none;
+}
+.alarm_wrap .myalarm{
+	height:30px;
+	line-height:30px;
+	padding-left:8px;
+}
+.alarm_wrap .close {
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:20px;
+    height:20px;
+    transform:rotate(45deg);
+    background: url(../image/x_button2.png) no-repeat center/cover;
+}
+.alarm_wrap .alarm_box {
+	width:100%;
+	height:calc(100% - 30px);
+	overflow-y:scroll;
+	border-top:2px solid #666;
+	border-radius:0 0 10px 10px;
+}
+.alarm_wrap .alarm_box::-webkit-scrollbar {
+	width:8px;
+	margin-right:2px;
+}
+.alarm_wrap .alarm_box::-webkit-scrollbar-thumb {
+	width:8px;
+	border-radius:4px;
+	background-color:#888;
+}
+.alarm_wrap .alarm_box::-webkit-scrollbar-track {
+	background:none;
+}
+.alarm_wrap .alarm_box li {
+	position:relative;
+	height:40px;
+	padding-left:8px;
+	border-bottom:1px solid #666;
+	overflow:hidden;
+}
+.alarm_wrap .alarm_box li.noread {
+	background-color:#fff;
+}
+.alarm_wrap .alarm_box li.read {
+	background-color:#eee;
+	
+}
+.alarm_wrap .alarm_box li .hidden {
+	position:absolute;
+	left:-9999px;
+}
+.alarm_wrap .alarm_box li .alarm_title {
+	line-height:40px;
+	cursor:pointer;
+	
+}
+.alarm_wrap .alarm_box li.read .alarm_title {
+	color:#555;
+}
+.alarm_wrap .alarm_box li .x_bu {
+    position:absolute;
+    top:12px;
+    right:10px;
+    width:15px;
+    height:15px;
+    transform:rotate(45deg);
+    background: url(../image/x_button2.png) no-repeat center/cover;
+	cursor:pointer;
+	
+}
+
+
+
+
+footer {
+    width:100%;
+    z-index: 200;
+    background-color:#333;
+    height:150px;
+}
+footer .footer_inner {
+	position:relative;
+    width:1280px;
+    height:100%;
+    margin:0 auto;
+    padding-top:20px;
+}
+footer .footer_inner h2 {
+	float:left;
+    width:150px;
+    height:100%;
+    margin-right:25px;
+}
+footer .footer_inner h2 a img {
+    width:150px;
+}
+footer .footer_inner .footer_ul {
+	height:30px;
+	line-height:30px;
+}
+footer .footer_inner .footer_ul li,
+footer .footer_inner .footer_ul li a,
+footer .footer_inner p {
+    color:#fff;
+	line-height:30px;
+	font-size:15px;
+}
+footer .footer_inner .footer_ul.ul3 {
+	position:absolute;
+	top:30px;
+	right:0;
+	text-align:center;
+}
+footer .footer_inner .footer_ul.ul3  li a {
+	display:inline-block;
+	width:100px;
+}
+footer .footer_inner .footer_ul li {
+	float:left;
+}
+footer .footer_inner .footer_ul.ul3 li:nth-child(2n-1) {
+	clear:both;
+}
+footer .footer_inner .footer_ul li:after {
+	content:"|";
+	color:#fff;
+	margin:0 6px;
+}
+footer .footer_inner .footer_ul li:last-child:after,
+footer .footer_inner .footer_ul.ul3 li:nth-child(2n):after{
+	content:none;
+}
+footer .footer_inner p {
+	display:block;
+	margin-top:10px;
+}
+
+
+
+
+
+
+

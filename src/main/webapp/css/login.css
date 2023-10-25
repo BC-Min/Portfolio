@@ -1,0 +1,147 @@
+#img_login > div {
+  width: 830px;
+  height: 849px;
+  float: left;
+  background: url(../image/background/bg09.jpg) no-repeat center/cover;
+}
+
+
+#login_id {
+	text-align: center;
+	font-size: 30px;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+article > form > div {
+	width: 600px;
+	height: 510px;
+	margin : 0 auto;
+	margin-top : 120px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #999;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.loginlabel{
+	font-family: gothic;
+	font-size : 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	padding-left:80px;
+}
+
+input[type="text"]{
+	display:block;
+	margin-top : 10px;
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin:0 auto;
+	margin-bottom: -5px;
+	box-sizing: border-box;
+}
+
+input[type="password"] {
+	display:block;
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin:0 auto;
+	margin-bottom: 25px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	display:block;
+	background-color: #4CAF50;
+	width: 70%;
+	height: 40px;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin:0 auto;
+	margin-bottom: 40px;
+	font-size:19px;
+}
+
+input[type="button"] {
+	background-color: #4CAF50;
+	width: 120px;
+	height: 40px;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #45a049;
+	margin-bottom: 40px;
+}
+
+.etc_login{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.etc_login > span > img{
+	float: left;
+	display: block;
+	width :270px;
+	height : 40px;
+	margin:5px;
+}
+
+.etc_login > span > a > img{
+	float: left;
+	display: block;
+	width :270px;
+	height : 40px;
+	margin:5px;
+}
+
+.etc_login > div{
+	width :270px;
+	margin : 0 auto;
+	height : 25px;
+	text-align: center;
+	padding-right: 65px;
+	
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #666;
+  border-bottom: 1px dashed #666;
+  transition: border-bottom 0.2s;
+  margin-bottom: 40px;
+}
+
+.links a:hover {
+  border-bottom: 1px solid #666;
+}
+
+.button_center{
+   text-align: center;
+}
+
+footer{
+	float:left !important;
+}
